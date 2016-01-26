@@ -1,8 +1,17 @@
 <div class="jumbotron">
 <h1>Pages#home</h1>
+
+
+<% if user_signed_in? %>
+# do something
+
+<% else %>
 <p>Go here to sign up!<br/>
-<%= button_to "Register!", "#", class: "btn btn-primary" %>
+<%= link_to "Log in!", new_user_session_path, class: "btn btn-primary" %>
+<%= link_to "Register!", new_user_registration_path, class: "btn btn-primary" %>
 
 
 </p>
+
+<% end %>
 </div>
