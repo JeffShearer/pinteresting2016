@@ -13,6 +13,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'paperclip', '~> 4.2'
+gem 'masonry-rails', '~> 0.2.0'
+gem 'will_paginate', '~> 3.0.5'
 
 group :development, :test do
   gem 'byebug'
