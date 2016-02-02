@@ -16,11 +16,15 @@
     </div>
   <% end %>
 
+ 
+
 </div>
+<div class="text-center">
+   <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
 
 <br>
 
 <% if user_signed_in? %>
   <%= link_to 'New Pin', new_pin_path, class: "btn btn-primary" %>
 <% end %>
-
+</div>
